@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bring Big Data To Everyone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="ml-system.html">Home</a></li>
+          <li><a href="ml-system-people.html">People</a></li>
+        </ul>
+        <h3 class="muted">Bring BigData to Everyone</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Bring BigData to Everyone</h1>
+        <p class="lead">We are developing a user-friendly Machine Learning system, so that</p>
+        <div class="text-left">
+          <ul font-size="12">
+            <li><p>You can analyze large volume of data efficiently, even <strong>you never learn programming stuffs</strong></p></li>
+            <li><p>You can evaluate your new algorithms, even <strong>you are a machine learning expert but with limited system background</strong></p></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <h2>Unified Data Processing Interface</h2>
+        <p>Machine learning algorithms may be applied to data which have been stored in database (batch job processing) or that coming to the system in real time (streaming processing). In most of solutions, there are two independent systems to handle these two cases, e.g. in Twitter, Hadoop is used to process data stored in HDFS or Hive [1]; Storm [2] is the streaming data processing platform to handle real-time data. Pure stream processing system suffers from fault-tolerance and consistency problem: A failed node may cause upstream backup takes a long time to recover and it's hard to reason about the global state, because different nodes may be processing data that arrived at different time. Discretized Stream [3] is the new model for streaming processing. It utilizes continuous batch jobs to emulate real time processing and provide the possibility to combine the batch and streaming processing platform. However discretized streaming applies large burden on the job scheduler and suffers from the straggler problem. </p>
+
+        <p>In this work, we are trying to achieve the unification of batch and stream processing: Improve the consistency and fault-tolerance of stream processing; Design the fast and accurate mechanism to sync real-time and historical data and report the statistical results; Design new batch processing engine supporting real time queries and enabling users to get the partial results before the query is completely finished. </p>
+
+        <img src="img/ml-itf.jpg" class="img-rounded">
+      </div>
+      <div>
+        <h4>References</h4>
+        <ul>
+          <li>[1] Ashish Thusoo , Joydeep Sen Sarma , Namit Jain , Zheng Shao , Prasad Chakka , Suresh Anthony , Hao Liu , Pete Wyckoff , Raghotham Murthy, Hive- A Warehousing Solution Over a Map-Reduce Framework, IN VLDB '09: PROCEEDINGS OF THE VLDB ENDOWMENT</li>
+          <li>[2] Twitter Storm Project, https://github.com/nathanmarz/storm</li>
+          <li>[3] M. Zaharia, T. Das, H. Li, S. Shenker and I. Stoica. Discretized Streams: An Efficient and Fault-Tolerant Model for Stream Processing on Large Clusters, HotCloud 2012, June 2012.</li>
+        </ul>
+      </div>
+      <div class="footer">
+        <p>&copy; CPSLab, School of Computer Science, McGill University</p>
+      </div>
+      
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
